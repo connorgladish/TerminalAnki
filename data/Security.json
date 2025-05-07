@@ -1,0 +1,169 @@
+{
+    "deck": [
+      {
+        "term": "Virus",
+        "definition": "A type of malware that attaches itself to a host application and must be executed by the user or system."
+      },
+      {
+        "term": "Worm",
+        "definition": "Self-replicating malware that travels throughout a network without the assistance of host application or user interaction."
+      },
+      {
+        "term": "Trojan",
+        "definition": "Malicious software that appears to be legitimate but contains harmful components, such as installing a backdoor."
+      },
+      {
+        "term": "Rootkit",
+        "definition": "A type of malware that gains root-level or kernel-level access and modifies system files or access to hide itself."
+      },
+      {
+        "term": "Keylogger",
+        "definition": "Software that records keystrokes and transmits them to a remote location."
+      },
+      {
+        "term": "Ransomware",
+        "definition": "A type of malware that takes control of a user's data or system and demands a ransom for release."
+      },
+      {
+        "term": "Spyware",
+        "definition": "Malware that monitors and collects a user's activity and sends the information to a third party."
+      },
+      {
+        "term": "Phishing",
+        "definition": "A type of social engineering attack that uses email to trick users into revealing personal information."
+      },
+      {
+        "term": "Buffer Overflow",
+        "definition": "Occurs when an application receives more data than it can handle, potentially causing system crashes or security vulnerabilities."
+      },
+      {
+        "term": "Man-in-the-Middle Attack",
+        "definition": "An attack where an attacker intercepts and possibly alters communication between two parties without their knowledge."
+      },
+      {
+        "term": "SQL Injection",
+        "definition": "An attack that involves inserting malicious SQL code into input fields to access or manipulate a database."
+      },
+      {
+        "term": "Cross-site Scripting (XSS)",
+        "definition": "An attack that involves injecting malicious scripts into web applications to execute them on client-side browsers."
+      },
+      {
+        "term": "Cross-site Request Forgery (XSRF)",
+        "definition": "An attack that tricks a user into performing unintended actions on a website."
+      },
+      {
+        "term": "Privilege Escalation",
+        "definition": "A process of exploiting a vulnerability to gain higher-level privileges, such as admin or root access."
+      },
+      {
+        "term": "ARP Poisoning",
+        "definition": "A type of attack where a malicious actor sends falsified ARP (Address Resolution Protocol) messages over a local network."
+      },
+      {
+        "term": "DNS Poisoning",
+        "definition": "An attack that involves corrupting the DNS resolver cache to redirect users to malicious websites."
+      },
+      {
+        "term": "Session Hijacking",
+        "definition": "An attack where an attacker steals a user's session ID to impersonate them on a website or network."
+      },
+      {
+        "term": "Clickjacking",
+        "definition": "An attack where a malicious actor tricks a user into clicking on something other than what the user intends."
+      },
+      {
+        "term": "VPN",
+        "definition": "A Virtual Private Network that encrypts traffic and allows secure remote access to a network."
+      },
+      {
+        "term": "IPSec",
+        "definition": "An encryption protocol used to secure internet protocol communications by authenticating and encrypting data."
+      },
+      {
+        "term": "SSL/TLS",
+        "definition": "Protocols that secure communications over a computer network, typically used for web traffic (HTTPS)."
+      },
+      {
+        "term": "Zero-Day Vulnerability",
+        "definition": "A security flaw that is unknown to the software vendor and has no available patch or fix."
+      },
+      {
+        "term": "Two-Factor Authentication (2FA)",
+        "definition": "A security process in which the user provides two different forms of identification before gaining access."
+      },
+      {
+        "term": "Social Engineering",
+        "definition": "A method of attack that relies on manipulating people into divulging confidential information."
+      },
+      {
+        "term": "NIDS (Network Intrusion Detection System)",
+        "definition": "A system that monitors network traffic for signs of malicious activity."
+      },
+      {
+        "term": "NIPS (Network Intrusion Prevention System)",
+        "definition": "A system that actively monitors and stops malicious network traffic before it can enter a network."
+      },
+      {
+        "term": "DLP (Data Loss Prevention)",
+        "definition": "A set of technologies used to detect and prevent data breaches or unauthorized data transfers."
+      },
+      {
+        "term": "ACL (Access Control List)",
+        "definition": "A set of rules used to control the incoming and outgoing traffic to or from a network resource."
+      },
+      {
+        "term": "DMZ (Demilitarized Zone)",
+        "definition": "A network segment that acts as a buffer zone between an internal network and the outside world."
+      },
+      {
+        "term": "SIEM (Security Information and Event Management)",
+        "definition": "A system that aggregates, analyzes, and correlates security data from various sources within an organization's IT infrastructure."
+      },
+      {
+        "term": "PaaS (Platform as a Service)",
+        "definition": "A cloud computing model that provides a platform allowing customers to develop, run, and manage applications."
+      },
+      {
+        "term": "IaaS (Infrastructure as a Service)",
+        "definition": "A cloud computing model that provides virtualized computing resources over the internet."
+      },
+      {
+        "term": "SaaS (Software as a Service)",
+        "definition": "A cloud computing model that delivers software applications over the internet."
+      },
+      {
+        "term": "RAID 1 (Mirrored Disk)",
+        "definition": "A RAID configuration that mirrors data between two drives, ensuring data redundancy in case of drive failure."
+      },
+      {
+        "term": "RAID 5 (Block-striped with Error Check)",
+        "definition": "A RAID configuration that uses striping for performance and parity for data redundancy, requiring a minimum of three drives."
+      },
+      {
+        "term": "Patch Management",
+        "definition": "The process of regularly updating software with patches to address security vulnerabilities and bugs."
+      },
+      {
+        "term": "Load Balancer",
+        "definition": "A device that distributes incoming network traffic across multiple servers to ensure optimal performance and reliability."
+      },
+      {
+        "term": "Sandboxing",
+        "definition": "Running an application in a restricted environment to prevent it from affecting the host system."
+      },
+      {
+        "term": "FDE vs. SED",
+        "definition": "FDE (Full Disk Encryption) encrypts the entire disk, while SED (Self-Encrypting Drives) provide built-in encryption features for the disk itself."
+      },
+      {
+        "term": "Vulnerability Scanning vs. Penetration Testing",
+        "definition": "Vulnerability scanning identifies vulnerabilities but doesn't exploit them, while penetration testing actively exploits vulnerabilities to test security."
+      },
+      {
+        "term": "Zero Trust Architecture",
+        "definition": "A security model that requires verification for every request, regardless of its origin, to ensure that no one, inside or outside, is trusted by default."
+      }
+    ]
+  }
+  
