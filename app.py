@@ -1,33 +1,80 @@
 # filepath: terminal-flashcard-app/terminal-flashcard-app/app.py
 
+import json
 from flashcards.deck import Deck
 
-def main():
-    print("Welcome to the Terminal Flashcard App!")
-    deck = Deck('data/sample_deck.json')  # Pass the file path to Deck
+def create_new_deck():
+    print("\nCreating a new study deck...")
+    deck_name = input("Enter the name of the new deck: ").strip()
+    deck_file = f"data/{deck_name}.json"
+    new_deck = {"deck": []}
 
     while True:
-        print("\nSelect a study deck:")
-        print("1. Sample Deck")
-        print("2. Exit")
+        term = input("Enter a term (or type 'done' to finish): ").strip()
+        if term.lower() == 'done':
+            break
+        definition = input(f"Enter the definition for '{term}': ").strip()
+        new_deck["deck"].append({"term": term, "definition": definition})
+
+    with open(deck_file, 'w') as file:
+        json.dump(new_deck, file, indent=4)
+    print(f"New deck saved as '{deck_file}'!")
+
+def main():
+    print(r"""
+  _________  _______   ________  _____ ______   ___  ________   ________  ___          
+ |\___   ___\\  ___ \ |\   __  \|\   _ \  _   \|\  \|\   ___  \|\   __  \|\  \         
+ \|___ \  \_\ \   __/|\ \  \|\  \ \  \\\__\ \  \ \  \ \  \\ \  \ \  \|\  \ \  \        
+      \ \  \ \ \  \_|/_\ \   _  _\ \  \\|__| \  \ \  \ \  \\ \  \ \   __  \ \  \       
+       \ \  \ \ \  \_|\ \ \  \\  \\ \  \    \ \  \ \  \ \  \\ \  \ \  \ \  \ \  \____  
+        \ \__\ \ \_______\ \__\\ _\\ \__\    \ \__\ \__\ \__\\ \__\ \__\ \__\ \_______\
+         \|__|  \|_______|\|__|\|__|\|__|     \|__|\|__|\|__| \|__|\|__|\|__|\|_______|
+                                                                                       
+                                                                                       
+                                                                                       
+  ________  ________  ________  ________  ________  ___                                
+ |\   ____\|\   __  \|\   __  \|\   ___ \|\   ____\|\  \                               
+ \ \  \___|\ \  \|\  \ \  \|\  \ \  \_|\ \ \  \___|\ \  \                              
+  \ \  \    \ \   __  \ \   _  _\ \  \ \\ \ \_____  \ \  \                             
+   \ \  \____\ \  \ \  \ \  \\  \\ \  \_\\ \|____|\  \ \__\                            
+    \ \_______\ \__\ \__\ \__\\ _\\ \_______\____\_\  \|__|                            
+     \|_______|\|__|\|__|\|__|\|__|\|_______|\_________\  ___                          
+                                            \|_________| |\__\                         
+                                                         \|__|                         
+    """)
+    print("Welcome to Terminal Cards!")
+
+    while True:
+        print("\nMenu:")
+        print("1. Study a deck")
+        print("2. Create a new deck")
+        print("3. Exit")
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            deck.shuffle()
-            while True:
-                card = deck.get_next_card()
-                if not card:
-                    print("You have completed the deck!")
-                    break
-                print(f"\nTerm: {card.term}")
-                input("Press Enter to see the definition...")
-                print(f"Definition: {card.definition}")
-                input("Press Enter for the next card...")
+            deck_name = input("Enter the name of the deck to study (e.g., 'sample_deck'): ").strip()
+            deck_file = f"data/{deck_name}.json"
+            try:
+                deck = Deck(deck_file)
+                deck.shuffle()
+                while True:
+                    card = deck.get_next_card()
+                    if not card:
+                        print("You have completed the deck!")
+                        break
+                    print(f"\nTerm: {card.term}")
+                    input("\nPress Enter to see the definition...")
+                    print(f"\nDefinition: {card.definition}")
+                    input("\nPress Enter for the next card...")
+            except FileNotFoundError:
+                print(f"Deck '{deck_name}' not found. Please create it first.")
         elif choice == '2':
-            print("Exiting the application. Goodbye!")
+            create_new_deck()
+        elif choice == '3':
+            print("\nExiting the application. Goodbye!")
             break
         else:
-            print("Invalid choice. Please try again.")
+            print("\nInvalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
