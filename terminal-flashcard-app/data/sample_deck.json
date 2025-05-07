@@ -1,0 +1,24 @@
+{
+  "deck": [
+    {
+      "term": "Python",
+      "definition": "A high-level programming language known for its readability and versatility."
+    },
+    {
+      "term": "Variable",
+      "definition": "A reserved memory location to store values."
+    },
+    {
+      "term": "Function",
+      "definition": "A block of code that only runs when it is called."
+    },
+    {
+      "term": "List",
+      "definition": "A collection of items in a particular order."
+    },
+    {
+      "term": "Dictionary",
+      "definition": "A collection of key-value pairs."
+    }
+  ]
+}
