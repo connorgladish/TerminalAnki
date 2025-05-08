@@ -1,5 +1,5 @@
-# filepath: terminal-flashcard-app/terminal-flashcard-app/app.py
 
+import os  # Add import for clearing the terminal
 import json
 from flashcards.deck import Deck
 
@@ -44,37 +44,58 @@ def main():
     """)
     print("Welcome to Terminal Cards!")
 
-    while True:
-        print("\nMenu:")
-        print("1. Study a deck")
-        print("2. Create a new deck")
-        print("3. Exit")
-        choice = input("Enter your choice: ")
+    try:
+        while True:
+            print("\nMenu:")
+            print("1. Study a deck")
+            print("2. Create a new deck")
+            print("3. Exit")
+            choice = input("Enter your choice: ")
 
-        if choice == '1':
-            deck_name = input("Enter the name of the deck to study (e.g., 'sample_deck'): ").strip()
-            deck_file = f"data/{deck_name}.json"
-            try:
-                deck = Deck(deck_file)
-                deck.shuffle()
-                while True:
-                    card = deck.get_next_card()
-                    if not card:
-                        print("You have completed the deck!")
-                        break
-                    print(f"\nTerm: {card.term}")
-                    input("\nPress Enter to see the definition...")
-                    print(f"\nDefinition: {card.definition}")
-                    input("\nPress Enter for the next card...")
-            except FileNotFoundError:
-                print(f"Deck '{deck_name}' not found. Please create it first.")
-        elif choice == '2':
-            create_new_deck()
-        elif choice == '3':
-            print("\nExiting the application. Goodbye!")
-            break
-        else:
-            print("\nInvalid choice. Please try again.")
+            if choice == '1':
+                deck_name = input("Enter the name of the deck to study (e.g., 'sample_deck'): ").strip()
+                deck_file = f"data/{deck_name}.json"
+                try:
+                    deck = Deck(deck_file)
+                    deck.shuffle()
+                    correct = 0
+                    total = 0
+                    while True:
+                        card = deck.get_next_card()
+                        if not card:
+                            break
+                        print(f"\033[91mTerm: {card.term}\033[0m")  # Red text for term
+                        input("\nPress Enter to see the definition...")
+                        print(f"\033[94mDefinition: {card.definition}\033[0m")  # Blue text for definition
+                        while True:
+                            result = input("\nDid you get it correct? (1 for Yes, 2 for No): ").strip()
+                            if result == '1':
+                                correct += 1
+                                break
+                            elif result == '2':
+                                break
+                            else:
+                                print("Invalid input. Please enter 1 or 2.")
+                        total += 1
+                        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the terminal
+                    
+                    print(f"\nYou got {correct} out of {total} correct.")
+                    percentage = (correct / total) * 100
+                    if percentage >= 80:
+                        print("Congratulations! You passed!")
+                    else:
+                        print("Keep practicing! You can do it!")
+                except FileNotFoundError:
+                    print(f"Deck '{deck_name}' not found. Please create it first.")
+            elif choice == '2':
+                create_new_deck()
+            elif choice == '3':
+                print("\nExiting the application. Goodbye!")
+                break
+            else:
+                print("\nInvalid choice. Please try again.")
+    except KeyboardInterrupt:
+        print("\n\nExiting the application. Goodbye!")
 
 if __name__ == "__main__":
     main()

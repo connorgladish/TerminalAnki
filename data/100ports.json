@@ -1,0 +1,180 @@
+{
+    "deck": [
+      {
+        "term": "Port 20",
+        "definition": "FTP Data Transfer (File Transfer Protocol) - Used for data transfer in FTP."
+      },
+      {
+        "term": "Port 21",
+        "definition": "FTP Control (File Transfer Protocol) - Used for establishing the connection for FTP."
+      },
+      {
+        "term": "Port 22",
+        "definition": "SSH (Secure Shell) - Used for secure remote login and secure file transfer."
+      },
+      {
+        "term": "Port 23",
+        "definition": "Telnet - Used for unencrypted communication and remote login (not recommended for secure connections)."
+      },
+      {
+        "term": "Port 25",
+        "definition": "SMTP (Simple Mail Transfer Protocol) - Used for sending emails between servers."
+      },
+      {
+        "term": "Port 53",
+        "definition": "DNS (Domain Name System) - Used for translating domain names into IP addresses."
+      },
+      {
+        "term": "Port 67",
+        "definition": "DHCP (Dynamic Host Configuration Protocol) - Used for assigning dynamic IP addresses to devices."
+      },
+      {
+        "term": "Port 68",
+        "definition": "DHCP (Dynamic Host Configuration Protocol) - Used by clients to receive DHCP offers from servers."
+      },
+      {
+        "term": "Port 80",
+        "definition": "HTTP (HyperText Transfer Protocol) - Used for standard web traffic and communication."
+      },
+      {
+        "term": "Port 110",
+        "definition": "POP3 (Post Office Protocol version 3) - Used for retrieving emails from a server."
+      },
+      {
+        "term": "Port 143",
+        "definition": "IMAP (Internet Message Access Protocol) - Used for retrieving and managing emails from a server."
+      },
+      {
+        "term": "Port 161",
+        "definition": "SNMP (Simple Network Management Protocol) - Used for managing network devices like routers and switches."
+      },
+      {
+        "term": "Port 162",
+        "definition": "SNMP Trap - Used for sending alerts or traps from SNMP-enabled devices."
+      },
+      {
+        "term": "Port 443",
+        "definition": "HTTPS (HyperText Transfer Protocol Secure) - Used for secure web traffic with encryption."
+      },
+      {
+        "term": "Port 445",
+        "definition": "SMB (Server Message Block) - Used for sharing files and printers over a network."
+      },
+      {
+        "term": "Port 3306",
+        "definition": "MySQL - Used by MySQL databases to communicate with clients."
+      },
+      {
+        "term": "Port 3389",
+        "definition": "RDP (Remote Desktop Protocol) - Used for accessing remote Windows desktops and servers."
+      },
+      {
+        "term": "Port 5900",
+        "definition": "VNC (Virtual Network Computing) - Used for remote desktop access on non-Windows operating systems."
+      },
+      {
+        "term": "Port 8080",
+        "definition": "HTTP Alternative - Used as an alternative to port 80 for web traffic, often for testing or proxy servers."
+      },
+      {
+        "term": "Port 8443",
+        "definition": "HTTPS Alternative - Used as a secure alternative to port 80 for encrypted web traffic."
+      },
+      {
+        "term": "Port 993",
+        "definition": "IMAPS (IMAP Secure) - Secure version of IMAP, using SSL/TLS for encrypted communication."
+      },
+      {
+        "term": "Port 995",
+        "definition": "POP3S (POP3 Secure) - Secure version of POP3, using SSL/TLS for encrypted communication."
+      },
+      {
+        "term": "Port 137",
+        "definition": "NetBIOS Name Service - Used for name resolution in Windows networks."
+      },
+      {
+        "term": "Port 138",
+        "definition": "NetBIOS Datagram Service - Used for communication and file sharing in Windows networks."
+      },
+      {
+        "term": "Port 139",
+        "definition": "NetBIOS Session Service - Used for establishing sessions in Windows networks."
+      },
+      {
+        "term": "Port 123",
+        "definition": "NTP (Network Time Protocol) - Used for synchronizing clocks across computer systems."
+      },
+      {
+        "term": "Port 69",
+        "definition": "TFTP (Trivial File Transfer Protocol) - A simplified version of FTP, often used for booting devices over the network."
+      },
+      {
+        "term": "Port 2049",
+        "definition": "NFS (Network File System) - Used for file sharing across UNIX-based systems."
+      },
+      {
+        "term": "Port 1521",
+        "definition": "Oracle DB - Default port used by Oracle databases for client connections."
+      },
+      {
+        "term": "Port 1701",
+        "definition": "L2TP (Layer 2 Tunneling Protocol) - Used for VPN connections, often in conjunction with IPSec."
+      },
+      {
+        "term": "Port 1812",
+        "definition": "RADIUS Authentication - Used for remote authentication to access networks."
+      },
+      {
+        "term": "Port 1813",
+        "definition": "RADIUS Accounting - Used for monitoring and recording user activities in remote access networks."
+      },
+      {
+        "term": "Port 3388",
+        "definition": "RDP (Remote Desktop Protocol) Alternate - Alternative port used for Remote Desktop connections."
+      },
+      {
+        "term": "Port 5000",
+        "definition": "UPnP (Universal Plug and Play) - Used for automatic device discovery and communication."
+      },
+      {
+        "term": "Port 5432",
+        "definition": "PostgreSQL - Default port used by PostgreSQL databases for client communication."
+      },
+      {
+        "term": "Port 5672",
+        "definition": "AMQP (Advanced Message Queuing Protocol) - Used for message brokering between distributed systems."
+      },
+      {
+        "term": "Port 5901",
+        "definition": "VNC (Virtual Network Computing) - Used for remote access to a graphical desktop."
+      },
+      {
+        "term": "Port 6379",
+        "definition": "Redis - Default port used by Redis, an in-memory data structure store."
+      },
+      {
+        "term": "Port 3306",
+        "definition": "MySQL - Default port used by MySQL database for client-server communication."
+      },
+      {
+        "term": "Port 11211",
+        "definition": "Memcached - Default port used by Memcached, a memory-caching system."
+      },
+      {
+        "term": "Port 8081",
+        "definition": "HTTP Alternate - Often used for testing, proxy, or developer web services."
+      },
+      {
+        "term": "Port 8443",
+        "definition": "HTTPS Alternate - Used for HTTPS traffic, commonly for testing or services outside the default SSL port."
+      },
+      {
+        "term": "Port 9001",
+        "definition": "Tor - Used by Tor, an anonymizing service for internet browsing."
+      },
+      {
+        "term": "Port 49152-65535",
+        "definition": "Dynamic or Private Ports - Ports dynamically assigned by the operating system for ephemeral communication."
+      }
+    ]
+  }
