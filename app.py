@@ -1,4 +1,3 @@
-
 import os  # Add import for clearing the terminal
 import json
 from flashcards.deck import Deck
@@ -64,21 +63,38 @@ def main():
                         card = deck.get_next_card()
                         if not card:
                             break
-                        print(f"\033[91mTerm: {card.term}\033[0m")  # Red text for term
-                        input("\nPress Enter to see the definition...")
-                        print(f"\033[94mDefinition: {card.definition}\033[0m")  # Blue text for definition
-                        while True:
-                            result = input("\nDid you get it correct? (1 for Yes, 2 for No): ").strip()
-                            if result == '1':
+                        if card.options:
+                            # Multiple-choice card
+                            print(f"\033[91mQuestion: {card.term}\033[0m")
+                            options_text = "\n".join([f"  {k}. {v}" for k, v in card.options.items()])
+                            print(f"Choices:\n{options_text}")
+                            user_answer = input("\nEnter your answer (a/b/c/d): ").strip().lower()
+                            correct_letter = card.answer
+                            correct_text = card.options[correct_letter] if correct_letter in card.options else card.definition
+                            if user_answer == correct_letter:
+                                print(f"\033[92mCorrect!\033[0m")
                                 correct += 1
-                                break
-                            elif result == '2':
-                                break
                             else:
-                                print("Invalid input. Please enter 1 or 2.")
+                                print(f"\033[91mIncorrect.\033[0m")
+                                print(f"Correct answer: {correct_letter}. {correct_text}")
+                            if card.explanation:
+                                print(f"Explanation: {card.explanation}")
+                            input("\nPress Enter to continue...")
+                        else:
+                            print(f"\033[91mTerm: {card.term}\033[0m")
+                            input("\nPress Enter to see the definition...")
+                            print(f"\033[94mDefinition: {card.definition}\033[0m")
+                            while True:
+                                result = input("\nDid you get it correct? (1 for Yes, 2 for No): ").strip()
+                                if result == '1':
+                                    correct += 1
+                                    break
+                                elif result == '2':
+                                    break
+                                else:
+                                    print("Invalid input. Please enter 1 or 2.")
                         total += 1
-                        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the terminal
-                    
+                        os.system('cls' if os.name == 'nt' else 'clear')
                     print(f"\nYou got {correct} out of {total} correct.")
                     percentage = (correct / total) * 100
                     if percentage >= 80:

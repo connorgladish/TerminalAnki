@@ -1,0 +1,114 @@
+{
+  "deck": [
+    {
+      "question": "Which of the following is a technical security control?",
+      "options": {
+        "a": "Security guard",
+        "b": "Encryption",
+        "c": "Lighting",
+        "d": "Gap analysis"
+      },
+      "answer": "b",
+      "explanation": "Encryption is a technical control; security guards and lighting are physical, gap analysis is managerial."
+    },
+    {
+      "question": "Which control type is designed to identify and report security incidents after they have occurred?",
+      "options": {
+        "a": "Preventive",
+        "b": "Deterrent",
+        "c": "Detective",
+        "d": "Corrective"
+      },
+      "answer": "c",
+      "explanation": "Detective controls identify and report incidents after they occur."
+    },
+    {
+      "question": "What does the 'A' in the CIA triad stand for?",
+      "options": {
+        "a": "Authentication",
+        "b": "Authorization",
+        "c": "Availability",
+        "d": "Accounting"
+      },
+      "answer": "c",
+      "explanation": "CIA stands for Confidentiality, Integrity, and Availability."
+    },
+    {
+      "question": "Which of the following is NOT a physical security control?",
+      "options": {
+        "a": "Bollards",
+        "b": "Access badge",
+        "c": "Honeypot",
+        "d": "Fencing"
+      },
+      "answer": "c",
+      "explanation": "A honeypot is a deception technology, not a physical control."
+    },
+    {
+      "question": "Which cryptographic concept ensures that a message cannot be denied as being sent by the sender?",
+      "options": {
+        "a": "Confidentiality",
+        "b": "Non-repudiation",
+        "c": "Obfuscation",
+        "d": "Salting"
+      },
+      "answer": "b",
+      "explanation": "Non-repudiation ensures the sender cannot deny sending the message."
+    },
+    {
+      "question": "Which of the following is a key management tool used to securely store cryptographic keys?",
+      "options": {
+        "a": "Key escrow",
+        "b": "Steganography",
+        "c": "Data masking",
+        "d": "Hashing"
+      },
+      "answer": "a",
+      "explanation": "Key escrow securely stores cryptographic keys for recovery purposes."
+    },
+    {
+      "question": "Which of the following is an example of a deterrent control?",
+      "options": {
+        "a": "Lighting",
+        "b": "Encryption",
+        "c": "Digital signatures",
+        "d": "Key stretching"
+      },
+      "answer": "a",
+      "explanation": "Lighting deters unauthorized access by increasing visibility."
+    },
+    {
+      "question": "Which technology is used to create a decoy system to attract attackers?",
+      "options": {
+        "a": "Honeypot",
+        "b": "Certificate authority",
+        "c": "Key exchange",
+        "d": "Policy Engine"
+      },
+      "answer": "a",
+      "explanation": "A honeypot is a decoy system used for deception and disruption."
+    },
+    {
+      "question": "Which of the following is a function of the Zero Trust Control Plane?",
+      "options": {
+        "a": "Implicit trust zones",
+        "b": "Policy-driven access control",
+        "c": "Policy Enforcement Point",
+        "d": "Subject/System"
+      },
+      "answer": "b",
+      "explanation": "Policy-driven access control is part of the Zero Trust Control Plane."
+    },
+    {
+      "question": "Which certificate-related component is responsible for revoking certificates?",
+      "options": {
+        "a": "Certificate authority",
+        "b": "Certificate revocation list (CRL)",
+        "c": "Online Certificate Status Protocol (OCSP)",
+        "d": "Self-signed certificate"
+      },
+      "answer": "b",
+      "explanation": "A CRL is a list of revoked certificates maintained by a certificate authority."
+    }
+  ]
+}
