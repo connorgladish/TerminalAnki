@@ -1,3 +1,5 @@
+<img src="images/splashscreen.png" alt="preview.png" width="600"/>
+
 # TerminalAnki
 
 This is a terminal-based flashcard application that allows users to study various terms and definitions through a simple text interface. Users can select a study deck and go through the flashcards, testing their knowledge in an interactive manner.
