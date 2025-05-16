@@ -1,4 +1,4 @@
-<img src="images/splashscreen.png" alt="Splashscreen" width="600"/>
+<img src="images/splashscreen.PNG" alt="Splashscreen" width="600"/>
 
 # TerminalAnki
 
