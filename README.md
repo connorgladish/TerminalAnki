@@ -1,4 +1,4 @@
-# Terminal Flashcard Application
+# TerminalAnki
 
 This is a terminal-based flashcard application that allows users to study various terms and definitions through a simple text interface. Users can select a study deck and go through the flashcards, testing their knowledge in an interactive manner.
 
@@ -16,7 +16,7 @@ This is a terminal-based flashcard application that allows users to study variou
    ```
 2. Navigate to the project directory:
    ```
-   cd terminal-flashcard-app
+   cd TerminalAnki
    ```
 3. Install the required dependencies:
    ```
@@ -27,7 +27,7 @@ This is a terminal-based flashcard application that allows users to study variou
 
 To start the application, run the following command:
 ```
-python app.py
+./app.py
 ```
 
 Follow the on-screen instructions to select a study deck and begin reviewing flashcards.
