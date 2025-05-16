@@ -1,0 +1,184 @@
+{
+  "deck": [
+    {
+      "term": "Tablet",
+      "definition": "A portable computing device with a touchscreen interface."
+    },
+    {
+      "term": "Laptop",
+      "definition": "A portable computer with an integrated screen, keyboard, and battery."
+    },
+    {
+      "term": "Web server",
+      "definition": "A server that hosts websites and responds to HTTP requests."
+    },
+    {
+      "term": "Firewall",
+      "definition": "A network security system that monitors and controls incoming and outgoing network traffic."
+    },
+    {
+      "term": "Router",
+      "definition": "A device that forwards data packets between computer networks."
+    },
+    {
+      "term": "Switch",
+      "definition": "A device that connects devices on a local area network (LAN) and uses MAC addresses to forward data."
+    },
+    {
+      "term": "IDS",
+      "definition": "Intrusion Detection System - A system that monitors network or system activities for malicious activities."
+    },
+    {
+      "term": "IPS",
+      "definition": "Intrusion Prevention System - A system that not only detects but also prevents malicious activities in real-time."
+    },
+    {
+      "term": "Wireless access point",
+      "definition": "A device that allows wireless devices to connect to a wired network via Wi-Fi."
+    },
+    {
+      "term": "Virtual machines",
+      "definition": "Software emulations of physical computers that run operating systems and applications."
+    },
+    {
+      "term": "Email system",
+      "definition": "A system used to send, receive, and store email messages."
+    },
+    {
+      "term": "Internet access",
+      "definition": "The ability to connect to and use the internet."
+    },
+    {
+      "term": "DNS server",
+      "definition": "A server that translates domain names into IP addresses."
+    },
+    {
+      "term": "IoT devices",
+      "definition": "Internet of Things devices are everyday objects that connect to the internet and can collect and exchange data."
+    },
+    {
+      "term": "Hardware tokens",
+      "definition": "Physical devices used for two-factor authentication (2FA), generating one-time passwords."
+    },
+    {
+      "term": "Smartphone",
+      "definition": "A mobile phone with advanced computing capabilities, including internet access and apps."
+    },
+    {
+      "term": "NICs",
+      "definition": "Network Interface Cards - Hardware that connects a computer to a network."
+    },
+    {
+      "term": "Power supplies",
+      "definition": "Devices that provide electrical power to a computer or network device."
+    },
+    {
+      "term": "GBICs",
+      "definition": "Gigabit Interface Converters - A transceiver used for network communications."
+    },
+    {
+      "term": "SFPs",
+      "definition": "Small Form-factor Pluggable transceivers - Modular connectors used for fiber optic or copper network links."
+    },
+    {
+      "term": "Managed Switch",
+      "definition": "A switch that can be configured and managed remotely, often used in enterprise environments."
+    },
+    {
+      "term": "Wireless access point",
+      "definition": "A device that allows wireless devices to connect to a wired network via Wi-Fi."
+    },
+    {
+      "term": "UPS",
+      "definition": "Uninterruptible Power Supply - A device that provides backup power during power outages."
+    },
+    {
+      "term": "Wi-Fi analyzer",
+      "definition": "A tool used to analyze Wi-Fi networks and measure their signal strength and quality."
+    },
+    {
+      "term": "Network mapper",
+      "definition": "A tool used to map out network devices and their connections."
+    },
+    {
+      "term": "NetFlow analyzer",
+      "definition": "A tool used to analyze traffic flow data from network devices to monitor performance and detect anomalies."
+    },
+    {
+      "term": "Windows OS",
+      "definition": "The operating system developed by Microsoft, commonly used on personal computers and servers."
+    },
+    {
+      "term": "Linux OS",
+      "definition": "An open-source operating system based on the Linux kernel."
+    },
+    {
+      "term": "Kali Linux",
+      "definition": "A Linux distribution based on Debian, used for penetration testing and security research."
+    },
+    {
+      "term": "Packet capture software",
+      "definition": "Software used to capture network packets for analysis and troubleshooting."
+    },
+    {
+      "term": "Pen testing software",
+      "definition": "Tools used for penetration testing to identify vulnerabilities in systems or networks."
+    },
+    {
+      "term": "Static and dynamic analysis tools",
+      "definition": "Tools used for analyzing code either without executing it (static) or by running it (dynamic)."
+    },
+    {
+      "term": "Vulnerability scanner",
+      "definition": "A tool used to scan networks or systems for known vulnerabilities."
+    },
+    {
+      "term": "Network emulators",
+      "definition": "Tools used to simulate network conditions for testing network configurations and troubleshooting."
+    },
+    {
+      "term": "Sample code",
+      "definition": "Example source code used for reference or learning."
+    },
+    {
+      "term": "Code editor",
+      "definition": "Software used to write, edit, and manage source code."
+    },
+    {
+      "term": "SIEM",
+      "definition": "Security Information and Event Management - A system for monitoring and managing security events and logs."
+    },
+    {
+      "term": "Keyloggers",
+      "definition": "Software or hardware used to capture and record keystrokes on a computer or mobile device."
+    },
+    {
+      "term": "MDM software",
+      "definition": "Mobile Device Management software used to manage and secure mobile devices in an enterprise environment."
+    },
+    {
+      "term": "VPN",
+      "definition": "Virtual Private Network - A service that provides secure, encrypted communication over the internet."
+    },
+    {
+      "term": "DHCP service",
+      "definition": "Dynamic Host Configuration Protocol service, which assigns IP addresses to devices on a network."
+    },
+    {
+      "term": "DNS service",
+      "definition": "A service that resolves domain names to IP addresses."
+    },
+    {
+      "term": "Access to cloud environments",
+      "definition": "The ability to access resources and services hosted on cloud platforms like AWS, Azure, or Google Cloud."
+    },
+    {
+      "term": "Sample network documentation/diagrams",
+      "definition": "Documents or visual diagrams that describe the network infrastructure, topology, and components."
+    },
+    {
+      "term": "Sample logs",
+      "definition": "Example log files used for monitoring and analyzing system or network activity."
+    }
+  ]
+}
